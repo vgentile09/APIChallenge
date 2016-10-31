@@ -17,7 +17,7 @@ reverseText = textToReverse[::-1]
 
 reversedData = {'token' : token, 'string' : reverseText}
 
-validate_request = requests.post(second_endpoint, data = json.dumps(reversedData), headers = head)
+validateRequest = requests.post(second_endpoint, data = json.dumps(reversedData), headers = head)
 
-print validate_request.text
+print validateRequest.text
 
